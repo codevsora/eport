@@ -83,51 +83,81 @@
     </div>
 </about>
 
-<education>
-    <div id="LANGUAGES" class="flex flex-col gap-40 mt-50 px-10">
+<languages class="flex flex-col justify-center items-center mt-50">
+    <div id="LANGUAGES" class="flex flex-col items-center w-fit border-b-5 border-blue-400 mb-5">
+        <h1 class="font-bold text-7xl">MOST</h1>
+        <h2 class="text-blue-400 text-7xl font-bold">PRACTICED</h2>
+    </div>
 
-        <div>
+    <div class="flex gap-15 mt-10">
+        <div class="flex items-center gap-3">
+            <img class="h-15" src="images/python.png"><p class="font-bold text-2xl">Python</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <img class="h-15" src="images/javascript.png"><p class="font-bold text-2xl">JavaScript</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <img class="h-15" src="images/html.png"><p class="font-bold text-2xl">HTML</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <img class="white h-15" src="images/css.png"><p class="font-bold text-2xl">CSS</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <img class="h-15" src="images/tailwind.png"><p class="font-bold text-2xl">Tailwind</p>
+        </div>
+    </div>
+</languages>
+
+<education>
+    <div id="LANGUAGES" class="flex flex-col md:flex-row justify-between gap-16 mt-50 px-10 w-full">
+
+        <!-- LEFT: EDUCATION -->
+        <div class="flex flex-col">
             <div class="flex flex-col w-fit border-b-5 border-blue-400 mb-10">
                 <h1 class="font-bold text-6xl text-white">MY</h1>
                 <h2 class="text-blue-400 text-6xl font-bold">EDUCATION</h2>
             </div>
 
-        <div class="flex flex-col gap-8 ml-4">
+            <div class="flex flex-col gap-8 ml-4">
 
-            <div class="flex items-stretch gap-6">
                 <div class="flex items-stretch gap-6">
                     <div class="flex flex-col items-center mt-7">
                         <span class="w-4 h-4 rounded-full border-2 border-white shrink-0"></span>
                         <span class="w-px flex-1 bg-white/30 -mb-15"></span>
                     </div>
+                    <div class="border border-white/30 rounded-2xl p-6 w-80">
+                        <p class="text-gray-400 font-bold mb-2">2026 - present</p>
+                        <h3 class="text-white font-bold text-xl">Kuressaare Ametikool</h3>
+                        <p class="text-blue-300">noorem tarkvaraarendaja</p>
+                    </div>
                 </div>
 
-                <div class="border border-white/30 rounded-2xl p-6 w-80">
-                    <p class="text-gray-400 font-bold mb-2">2026 - present</p>
-                    <h3 class="text-white font-bold text-xl">Kuressaare Ametikool</h3>
-                    <p class="text-blue-300">noorem tarkvaraarendaja</p>
+                <div class="flex items-start gap-6">
+                    <div class="flex flex-col items-center">
+                        <span class="w-4 h-4 rounded-full border-2 border-white shrink-0 mt-7"></span>
+                    </div>
+                    <div class="border border-white/30 rounded-2xl p-6 w-80">
+                        <p class="text-gray-400 font-bold mb-2">2015-2024</p>
+                        <h3 class="text-white font-bold text-xl">Kuressaare Nooruse kool</h3>
+                        <p class="text-blue-300">põhiharidus</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="flex items-start gap-6">
-                <div class="relative flex flex-col items-center">
-                    <span class="w-4 h-4 rounded-full border-2 border-white shrink-0 mt-7"></span>
-                </div>
-                <div class="border border-white/30 rounded-2xl p-6 w-80">
-                    <p class="text-gray-400 font-bold mb-2">2015-2024</p>
-                    <h3 class="text-white font-bold text-xl">Kuressaare Nooruse kool</h3>
-                    <p class="text-blue-300">põhiharidus</p>
-                </div>
             </div>
         </div>
 
-            <div class="flex flex-col items-end">
-                <div class="flex flex-col w-fit border-b-5 border-blue-400 mb-10 items-end">
-                    <h1 class="font-bold text-6xl text-white">WORK</h1>
-                    <h2 class="text-blue-400 text-6xl font-bold">EXPERIENCE</h2>
-                </div>
+        <!-- RIGHT: WORK EXPERIENCE -->
+        <div class="flex flex-col items-end">
+            <div class="flex flex-col w-fit border-b-5 border-blue-400 mb-10 items-end">
+                <h1 class="font-bold text-6xl text-white">WORK</h1>
+                <h2 class="text-blue-400 text-6xl font-bold">EXPERIENCE</h2>
+            </div>
 
-<div class="flex flex-col items-end gap-8">
+            <div class="flex flex-col items-end gap-8">
 
     <div class="flex items-stretch gap-6 flex-row-reverse">
         <div class="flex items-stretch gap-6">
@@ -157,36 +187,10 @@
 
 </div>
     </div>
+        </div>
+
+    </div>
 </education>
-
-<languages class="flex flex-col justify-start items-start mt-50">
-    <div id="LANGUAGES" class="flex flex-col items-start w-fit border-b-5 border-blue-400 mb-5">
-        <h1 class="font-bold text-7xl">MOST</h1>
-        <h2 class="text-blue-400 text-7xl font-bold">PRACTICED</h2>
-    </div>
-
-    <div class="flex gap-15 mt-10">
-        <div class="flex items-center gap-3">
-            <img class="h-15" src="images/python.png"><p class="font-bold text-2xl">Python</p>
-        </div>
-
-        <div class="flex items-center gap-3">
-            <img class="h-15" src="images/javascript.png"><p class="font-bold text-2xl">JavaScript</p>
-        </div>
-
-        <div class="flex items-center gap-3">
-            <img class="h-15" src="images/html.png"><p class="font-bold text-2xl">HTML</p>
-        </div>
-
-        <div class="flex items-center gap-3">
-            <img class="white h-15" src="images/css.png"><p class="font-bold text-2xl">CSS</p>
-        </div>
-
-        <div class="flex items-center gap-3">
-            <img class="h-15" src="images/tailwind.png"><p class="font-bold text-2xl">Tailwind</p>
-        </div>
-    </div>
-</languages>
         
 <contact>
     <div id="contact" class="mt-60 flex items-center flex-col gap-3">
