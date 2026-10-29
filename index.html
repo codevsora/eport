@@ -1,210 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <meta name="description" content="Portfolio of Elijah, a creative frontend developer with 2 years of experience in HTML, CSS, JavaScript, Tailwind and Python.">
+    <meta property="og:title" content="Portfolio">
+    <meta property="og:description" content="Creative frontend developer with 2 years of experience. See my projects, education and skills.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/purpleheart.png">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
     <link rel="icon" href="images/purpleheart.png">
-
 </head>
-<body>
-<header class="">
-    <div class="flex justify-between items-center w-full">
-        <div class="flex">
-            <p class="font-bold text-5xl">portfolio</p>
-            <p class="font-bold text-5xl text-blue-400">.</p>
-        </div>
-    
-        <div class="flex gap-8">
-            <p onclick="location.href='#EDUCATION'" class="font-bold text-3xl">education</p>
-            <p onclick="location.href='#LANGUAGES'" class="font-bold text-3xl">skills</p>
-        </div>
+<body class="px-5 md:px-10">
+
+<header>
+    <div class="flex flex-wrap justify-between items-center w-full gap-4 py-4">
+        <a href="#" class="flex">
+            <span class="font-bold text-3xl md:text-5xl">portfolio</span>
+            <span class="font-bold text-3xl md:text-5xl text-blue-400">.</span>
+        </a>
+
+        <nav class="flex flex-wrap gap-4 md:gap-8">
+            <a href="#about" class="font-bold text-xl md:text-3xl hover:text-blue-400">about</a>
+            <a href="#education" class="font-bold text-xl md:text-3xl hover:text-blue-400">education</a>
+            <a href="#skills" class="font-bold text-xl md:text-3xl hover:text-blue-400">skills</a>
+            <a href="#projects" class="font-bold text-xl md:text-3xl hover:text-blue-400">projects</a>
+            <a href="#contact" class="font-bold text-xl md:text-3xl hover:text-blue-400">contact</a>
+        </nav>
     </div>
 </header>
 
-<main class="mt-70">
-    <div class="flex flex-row">
-        <div class="flex flex-col">
-            <h1 class="font-bold text-7xl">FRONTEND</h1>
-            <h2 class="text-blue-400 ml-10 text-7xl font-bold pb-5">DEVELOPER</h2>
-        </div>
-
-
+<main class="mt-24 md:mt-70">
+    <div class="flex flex-col">
+        <h1 class="font-bold text-5xl md:text-7xl">FRONTEND</h1>
+        <h2 class="text-blue-400 ml-6 md:ml-10 text-5xl md:text-7xl font-bold pb-5">DEVELOPER</h2>
     </div>
-        <p class="text-xl">Hi! I'm <b><span class="text-blue-300">Elijah.</span></b> A creative frontend developer with 2 years of experience.</p>
 
+    <p class="text-xl">Hi! I'm <b><span class="text-blue-300">Elijah.</span></b> A creative frontend developer with 2 years of experience.</p>
 
-        <div class="flex flex-row items-right gap-10 mt-10 mb-5">
-            <div>
-                <h1 class="text-blue-700 text-5xl font-bold">2+</h1>
-                <p>Years of experience</p>
-            </div>
-            <div>
-                <h1 class="text-blue-500 text-5xl font-bold">15+</h1>
-                <p>Completed projects</p>
-            </div>
-            <div>
-                <h1 class="text-blue-400 text-5xl font-bold">400+</h1>
-                <p>Hours worked</p>
-            </div>
+    <div class="flex flex-row flex-wrap gap-10 mt-10 mb-5">
+        <div>
+            <h2 class="text-blue-700 text-5xl font-bold">2+</h2>
+            <p>Years of experience</p>
         </div>
-
-        <div class="flex gap-15">
-            <a onclick="location.href='#EDUCATION'" href="images/glaceon.gif"><button class="bg-blue-700 p-3 w-30 rounded-xl font-bold">Education</button></a>
-            <a onclick="location.href='#PROJECTS'"href="images/glaceon.gif"><button class="bg-blue-500 p-3 w-30 rounded-xl font-bold">Projects</button></a>
-            <a href="images/glaceon.gif"><button class="bg-blue-400 p-3 w-30 rounded-xl font-bold">CV</button></a>
+        <div>
+            <h2 class="text-blue-500 text-5xl font-bold">15+</h2>
+            <p>Completed projects</p>
         </div>
+        <div>
+            <h2 class="text-blue-400 text-5xl font-bold">400+</h2>
+            <p>Hours worked</p>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap gap-6 md:gap-15">
+        <a href="#education" class="bg-blue-700 p-3 w-30 rounded-xl font-bold text-center">Education</a>
+        <a href="#projects" class="bg-blue-500 p-3 w-30 ml-5 rounded-xl font-bold text-center">Projects</a>
+        <a href="#skills" class="bg-blue-400 p-3 w-30 ml-5 rounded-xl font-bold text-center">Skills</a>
+    </div>
 </main>
 
-<about>
-<div class="flex flex-col items-end mt-50 justify-end">
-    <div class="flex flex-col w-fit border-b-5 border-blue-400 items-end mb-5">
-        <h2 class="text-7xl font-bold w-fit">ABOUT</h2>
-        <h1 class="font-bold text-blue-400 text-7xl">MYSELF</h1>
+<section id="about">
+    <div class="flex flex-col items-end mt-32 md:mt-50 justify-end">
+        <div class="flex flex-col w-fit border-b-5 border-blue-400 items-end mb-5">
+            <h2 class="text-5xl md:text-7xl font-bold w-fit">ABOUT</h2>
+            <p class="font-bold text-blue-400 text-5xl md:text-7xl">MYSELF</p>
+        </div>
     </div>
-</div>
 
     <div class="flex gap-1 mt-10 w-full">
-        <p class="w-3/4 leading-loose ml-auto text-2xl text-right text-white font-extralight">
-        I am mostly self-taught in the field of 
-        <span class="text-blue-500 font-bold">software development</span> and 
-        <span class="text-blue-400 font-bold">digital art</span>,
-        but I am studying at <span class="text-blue-300 font-bold">Kuressaare Ametikool</span> to further develop my skills and knowledge. <br>
-        <br>
-        I excel in the creative field, I like to use my design and illustration skills in 
-        web design and software development. <br>
-        <br>
-        In my free time, I like to learn, test and make projects on any topics such as 
-        <span class="text-blue-500 font-bold">music development</span> and <span class="text-blue-400 font-bold">video editing</span>.
+        <p class="w-full md:w-3/4 leading-loose ml-auto text-xl md:text-2xl text-right text-white font-extralight">
+            I am mostly self-taught in the field of
+            <span class="text-blue-500 font-bold">software development</span> and
+            <span class="text-blue-400 font-bold">digital art</span>,
+            but I am studying at <span class="text-blue-300 font-bold">Kuressaare Ametikool</span> to further develop my skills and knowledge. <br>
+            <br>
+            I excel in the creative field, I like to use my design and illustration skills in
+            web design and software development. <br>
+            <br>
+            In my free time, I like to learn, test and make projects on any topics such as
+            <span class="text-blue-500 font-bold">music development</span> and <span class="text-blue-400 font-bold">video editing</span>.
         </p>
     </div>
-</about>
+</section>
 
-<languages class="flex flex-col justify-center items-center mt-50">
-    <div id="LANGUAGES" class="flex flex-col items-center w-fit border-b-5 border-blue-400 mb-5">
-        <h1 class="font-bold text-7xl">MOST</h1>
-        <h2 class="text-blue-400 text-7xl font-bold">PRACTICED</h2>
+<section id="education" class="mt-32 md:mt-50 md:px-10">
+
+    <div class="flex flex-col w-fit border-b-5 border-blue-400 mb-10">
+        <h2 class="font-bold text-4xl md:text-6xl text-white">MY</h2>
+        <p class="text-blue-400 text-4xl md:text-6xl font-bold">EDUCATION</p>
     </div>
 
-    <div class="flex gap-15 mt-10">
-        <div class="flex items-center gap-3">
-            <img class="h-15" src="images/python.png"><p class="font-bold text-2xl">Python</p>
-        </div>
-
-        <div class="flex items-center gap-3">
-            <img class="h-15" src="images/javascript.png"><p class="font-bold text-2xl">JavaScript</p>
-        </div>
-
-        <div class="flex items-center gap-3">
-            <img class="h-15" src="images/html.png"><p class="font-bold text-2xl">HTML</p>
-        </div>
-
-        <div class="flex items-center gap-3">
-            <img class="white h-15" src="images/css.png"><p class="font-bold text-2xl">CSS</p>
-        </div>
-
-        <div class="flex items-center gap-3">
-            <img class="h-15" src="images/tailwind.png"><p class="font-bold text-2xl">Tailwind</p>
-        </div>
-    </div>
-</languages>
-
-<education>
-    <div id="LANGUAGES" class="flex flex-col md:flex-row justify-between gap-16 mt-50 px-10 w-full">
-
-        <!-- LEFT: EDUCATION -->
-        <div class="flex flex-col">
-            <div class="flex flex-col w-fit border-b-5 border-blue-400 mb-10">
-                <h1 class="font-bold text-6xl text-white">MY</h1>
-                <h2 class="text-blue-400 text-6xl font-bold">EDUCATION</h2>
-            </div>
-
-            <div class="flex flex-col gap-8 ml-4">
-
-                <div class="flex items-stretch gap-6">
-                    <div class="flex flex-col items-center mt-7">
-                        <span class="w-4 h-4 rounded-full border-2 border-white shrink-0"></span>
-                        <span class="w-px flex-1 bg-white/30 -mb-15"></span>
-                    </div>
-                    <div class="border border-white/30 rounded-2xl p-6 w-80">
-                        <p class="text-gray-400 font-bold mb-2">2026 - present</p>
-                        <h3 class="text-white font-bold text-xl">Kuressaare Ametikool</h3>
-                        <p class="text-blue-300">noorem tarkvaraarendaja</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start gap-6">
-                    <div class="flex flex-col items-center">
-                        <span class="w-4 h-4 rounded-full border-2 border-white shrink-0 mt-7"></span>
-                    </div>
-                    <div class="border border-white/30 rounded-2xl p-6 w-80">
-                        <p class="text-gray-400 font-bold mb-2">2015-2024</p>
-                        <h3 class="text-white font-bold text-xl">Kuressaare Nooruse kool</h3>
-                        <p class="text-blue-300">põhiharidus</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- RIGHT: WORK EXPERIENCE -->
-        <div class="flex flex-col items-end">
-            <div class="flex flex-col w-fit border-b-5 border-blue-400 mb-10 items-end">
-                <h1 class="font-bold text-6xl text-white">WORK</h1>
-                <h2 class="text-blue-400 text-6xl font-bold">EXPERIENCE</h2>
-            </div>
-
-            <div class="flex flex-col items-end gap-8">
-
-    <div class="flex items-stretch gap-6 flex-row-reverse">
+    <div class="flex flex-col gap-8 ml-0 md:ml-4">
         <div class="flex items-stretch gap-6">
             <div class="flex flex-col items-center mt-7">
                 <span class="w-4 h-4 rounded-full border-2 border-white shrink-0"></span>
                 <span class="w-px flex-1 bg-white/30 -mb-15"></span>
             </div>
-        </div>
-
-        <div class="border border-white/30 rounded-2xl p-6 w-80 text-right">
-            <p class="text-gray-400 font-bold mb-2">2025 aprill-mai</p>
-            <h3 class="text-white font-bold text-xl">Kuressaare Haigla SA</h3>
-            <p class="text-blue-300">Praktika 200h</p>
-        </div>
-    </div>
-
-    <div class="flex items-start gap-6 flex-row-reverse">
-        <div class="relative flex flex-col items-center">
-            <span class="w-4 h-4 rounded-full border-2 border-white shrink-0 mt-7"></span>
-        </div>
-        <div class="border border-white/30 rounded-2xl p-6 w-80 text-right">
-            <p class="text-gray-400 font-bold mb-2">2026 juuni-august</p>
-            <h3 class="text-white font-bold text-xl">Kuressaare Haigla SA</h3>
-            <p class="text-blue-300">Praktika 200h</p>
-        </div>
-    </div>
-
-</div>
-    </div>
-        </div>
-
-    </div>
-</education>
-        
-<contact>
-    <div id="contact" class="mt-60 flex items-center flex-col gap-3">
-        <h1 class="text-xl">Have a project in mind?</h1>
-        <p class="font-bold text-2xl">xylol.eli@gmail.com</p>
-        <p>Copyright © 2025 CODEVSORA</p>
-            <div class="flex flex-row gap-7">
-                <img class="mail w-10 rounded-full shadow-xl" src="/images/mail.jpg" alt="">
-                <img class="phone w-10 rounded-sm shadow-xl " src="/images/phone.png" alt="">
-                <img class="face w-10 rounded-sm shadow-xl" src="/images/facebook.svg" alt="">
+            <div class="border border-white/30 rounded-2xl p-6 w-full max-w-80">
+                <p class="text-gray-400 font-bold mb-2">2026 - present</p>
+                <h3 class="text-white font-bold text-xl">Kuressaare Ametikool</h3>
+                <p class="text-blue-300">Junior software developer</p>
             </div>
+        </div>
+
+        <div class="flex items-start gap-6">
+            <div class="flex flex-col items-center">
+                <span class="w-4 h-4 rounded-full border-2 border-white shrink-0 mt-7"></span>
+            </div>
+            <div class="border border-white/30 rounded-2xl p-6 w-full max-w-80">
+                <p class="text-gray-400 font-bold mb-2">2015 - 2024</p>
+                <h3 class="text-white font-bold text-xl">Kuressaare Nooruse kool</h3>
+                <p class="text-blue-300">Basic education</p>
+            </div>
+        </div>
     </div>
-</contact>
 
+    <div class="flex flex-col items-end mt-32">
+        <div class="flex flex-col w-fit border-b-5 border-blue-400 mb-10 items-end">
+            <h2 class="font-bold text-4xl md:text-6xl text-white">WORK</h2>
+            <p class="text-blue-400 text-4xl md:text-6xl font-bold">EXPERIENCE</p>
+        </div>
 
+        <div class="flex flex-col items-end gap-8 w-full">
+            <div class="flex items-stretch gap-6 flex-row-reverse">
+                <div class="flex flex-col items-center mt-7">
+                    <span class="w-4 h-4 rounded-full border-2 border-white shrink-0"></span>
+                    <span class="w-px flex-1 bg-white/30 -mb-15"></span>
+                </div>
+                <div class="border border-white/30 rounded-2xl p-6 w-full max-w-80 text-right">
+                    <p class="text-gray-400 font-bold mb-2">June - August 2026</p>
+                    <h3 class="text-white font-bold text-xl">Kuressaare Haigla SA</h3>
+                    <p class="text-blue-300">Internship, 200h</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-6 flex-row-reverse">
+                <div class="flex flex-col items-center">
+                    <span class="w-4 h-4 rounded-full border-2 border-white shrink-0 mt-7"></span>
+                </div>
+                <div class="border border-white/30 rounded-2xl p-6 w-full max-w-80 text-right">
+                    <p class="text-gray-400 font-bold mb-2">April - May 2025</p>
+                    <h3 class="text-white font-bold text-xl">Kuressaare Haigla SA</h3>
+                    <p class="text-blue-300">Internship, 200h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="flex flex-col justify-start items-start mt-32 md:mt-50">
+    <div class="flex flex-col items-start w-fit border-b-5 border-blue-400 mb-5">
+        <h2 class="font-bold text-5xl md:text-7xl">MOST</h2>
+        <p class="text-blue-400 text-5xl md:text-7xl font-bold">PRACTICED</p>
+    </div>
+
+    <div class="flex flex-wrap gap-6 md:gap-15 mt-10">
+        <div class="flex items-center gap-3">
+            <img class="h-15" src="images/python.png" alt="Python logo"><p class="font-bold text-2xl">Python</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <img class="h-15" src="images/javascript.png" alt="JavaScript logo"><p class="font-bold text-2xl">JavaScript</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <img class="h-15" src="images/html.png" alt="HTML logo"><p class="font-bold text-2xl">HTML</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <img class="white h-15" src="images/css.png" alt="CSS logo"><p class="font-bold text-2xl">CSS</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <img class="h-15" src="images/tailwind.png" alt="Tailwind CSS logo"><p class="font-bold text-2xl">Tailwind</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="mt-32 md:mt-50">
+    <div class="flex flex-col items-end">
+        <div class="flex flex-col w-fit border-b-5 border-blue-400 mb-10 items-end">
+            <h2 class="font-bold text-5xl md:text-7xl">MY</h2>
+            <p class="text-blue-400 text-5xl md:text-7xl font-bold">PROJECTS</p>
+        </div>
+    </div>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+        <article class="border border-white/30 rounded-2xl overflow-hidden flex flex-col">
+            <img src="images/hangman.png" alt="Screenshot of Project One" class="w-full h-80 object-cover bg-white/10">
+            <div class="p-6 flex flex-col gap-3 flex-1">
+                <h3 class="text-white font-bold text-xl">Hangman</h3>
+                <p class="text-gray-300">Hangman is a classic word-guessing game for two or more players. </p>
+                <p class="text-blue-300 text-sm">HTML · CSS · JavaScript</p>
+                <div class="flex gap-4 mt-auto font-bold">
+                    <a href="https://github.com/codevsora/hangedman" class="text-blue-400 hover:underline">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="border border-white/30 rounded-2xl overflow-hidden flex flex-col">
+            <img src="images/terminaator.png" alt="Screenshot of Project Two" class="w-full h-80 object-cover bg-white/10">
+            <div class="p-6 flex flex-col gap-3 flex-1">
+                <h3 class="text-white font-bold text-xl">Project Terminaator</h3>
+                <p class="text-gray-300">A modern web application introducing the band Terminaator.</p>
+                <p class="text-blue-300 text-sm">Tailwind · JavaScript</p>
+                <div class="flex gap-4 mt-auto font-bold">
+                    <a href="https://www.figma.com/design/LjpkvfYFZbY9I46vX6TQ4x/Terminaator?m=auto&t=8SW0enKxEoa0vAGW-1" class="text-blue-400 hover:underline">Figma</a>
+                    <a href="https://github.com/RomelloLasn/project-terminaator" class="text-blue-400 hover:underline">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="border border-white/30 rounded-2xl overflow-hidden flex flex-col">
+            <img src="images/bookstore.png" alt="Screenshot of Project Three" class="w-full h-80  0 object-cover bg-white/10">
+            <div class="p-6 flex flex-col gap-3 flex-1">
+                <h3 class="text-white font-bold text-xl">Bookstore</h3>
+                <p class="text-gray-300">PHP and database study project. Contains thousands of books.</p>
+                <p class="text-blue-300 text-sm">Python</p>
+                <div class="flex gap-4 mt-auto font-bold">
+                    <a href="https://github.com/codevsora/bookstore" class="text-blue-400 hover:underline">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<footer id="contact" class="mt-32 md:mt-60 mb-10 flex items-center flex-col gap-3 text-center">
+    <h2 class="text-xl">Have a project in mind?</h2>
+    <a href="mailto:xylol.eli@gmail.com" class="font-bold text-2xl hover:text-blue-400">xylol.eli@gmail.com</a>
+    <div class="flex flex-row gap-7">
+        <a href="mailto:xylol.eli@gmail.com" aria-label="Email">
+            <img class="mail w-10 rounded-full shadow-xl" src="images/mail.jpg" alt="Email icon">
+        </a>
+    </div>
+    <p>Copyright © 2026 Elijah · CODEVSORA</p>
+</footer>
+
+<script src="script.js" defer></script>
 </body>
 </html>
